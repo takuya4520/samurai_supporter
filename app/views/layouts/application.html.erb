@@ -10,7 +10,12 @@
     <%= javascript_importmap_tags %>
   </head>
 
-  <body>
-    <%= yield %>
+  <body class="bg-dark">
+    <header>
+      <%= render 'shared/header'%>
+    </header>
+    <main>
+      <%= yield %>
+    </main>
   </body>
 </html>
